@@ -1,0 +1,141 @@
+<!-- projects html and css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #eee;
+            font-family: Arial, sans-serif;
+        }
+        .projects {
+            
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .projects h1 {
+            font-size: 36px;
+            color: #6aa0e6;
+        }
+        .project-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background-color: #232323;
+            width: 26%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+        .st-phone{
+            width: 100%;
+            height: 160px;
+            border-radius: 15px;
+        }
+        .project-title1{
+            font-size: 22px;
+            margin: 15px 0;
+            color: #5b6af0;
+            
+            
+        }
+        .project-title2{
+            font-size: 22px;
+            margin: 15px 0;
+            color: #5b6af0;
+          
+        }
+        
+        .project-title3{
+            font-size: 22px;
+            margin: 15px 0;
+            color: #5b6af0;
+            margin-top: 20px;
+        }
+        .project-description1{
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+        .project-description2{
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+        .project-description3{
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 39px;
+            color: #ffffff;
+        }
+        
+        .source-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0212A0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            
+        }
+        
+        
+        .source-link:hover {
+            background-color: #559ed9;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="unique-header">
+        <nav class="unique-nav">
+            <ul class="unique-nav-list">
+                <li><a href="#home" onclick="location.href='./index.html'" href="#about" class="unique-nav-link home" style="font-size: 18px;">Home</a></li>
+                <li><a onclick="location.href='./about.html'" href="#about" style="font-size: 18px;" class="unique-nav-link about">About</a></li>
+                <li><a onclick="location.href='skills.html'" href="#skills" style="font-size: 18px;" class="unique-nav-link skills">Skills</a></li>
+                <li><a style="font-size: 18px;" onclick="location.href='.projects.html'"  href="#projects" class="unique-nav-link projects">Projects</a></li>
+                <li><a style="font-size: 18px;" onclick="location.href='./contact.html'" href="#contact" class="unique-nav-link contact">Contact</a></li>
+            </ul>
+            <div class="unique-name">
+                <a href="#home" style="font-size: 22px;" class="unique-name-link">Sai Kiran</a>
+            </div>
+        </nav>
+    </header>
+    <div class="projects">
+        <h1 style="color: 0212A0;">Projects</h1>
+        <div class="project-cards">
+            <div class="project-card">
+                <img class="img" src="./assets/image_823530887101685353642847.png" alt="Ola Bike Ride Request Forecast using ML">
+                <div class="project-title1">Ola Bike Ride Request Forecast using ML</div>
+                <div class="project-description1">Developed and deployed a machine learning model using Random Forest to accurately forecast Ola bike ride requests, optimizing resource allocation and improving service efficiency.</div>
+                <a href="#" onclick="location.href='https://github.com/Bunnysai143/Ola-Bike-Ride-Request-Forecast-using-ML'" class="source-link">Source Link</a>
+            </div>
+            <div class="project-card">
+                <img class="img" src="../assets/th (1).jpeg" alt="Stress Detection">
+                <div class="project-title2">Stress Detection</div>
+                <div class="project-description2">Implemented a machine learning solution to detect stress levels based on physiological signals, enhancing early intervention strategies for mental health support. This project provides a tool for mental health professionals to manage stress in real-time.</div>
+                <a href="#" onclick="location.href='https://github.com/Bunnysai143/Stress_Dectection'"class="source-link">Source Link</a>
+            </div>
+            <div class="project-card">
+                <img class="st-phone" src="../assets/th.jpeg" alt="Student Phone Book using React">
+                <div class="project-title3">Student Phone Book using React</div>
+                <div class="project-description3">Created a responsive web application using React with CRUD functionality to manage student contact details dynamically, allowing for seamless addition, retrieval, modification, and deletion of information.</div>
+                <a href="#" onclick="location.href='https://github.com/Bunnysai143/Student-Phone-book'" class="source-link">Source Link</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

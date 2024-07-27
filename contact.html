@@ -1,0 +1,148 @@
+<!-- contact html and css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #000000;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .contact {
+            width: 50%;
+            margin:  auto;
+        }
+        .contact h1 {
+            font-size: 36px;
+            color: #6aa0e6;
+        }
+        .form-container {
+            background-color: #222121;
+            padding: 25px;
+            border-radius: 15px;
+            border-color: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .form-group {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            color: #6aa0e6;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #eee;
+        }
+        .form-group input::placeholder, .form-group textarea::placeholder {
+            color: #aaa;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #6aa0e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #559ed9;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #6aa0e6;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin: 10px 0;
+        }
+        .footer .social-icons i {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .footer .social-icons i:hover {
+            color: #6aa0e6;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="unique-header">
+        <nav class="unique-nav">
+            <ul class="unique-nav-list">
+                <li><a href="#home" onclick="location.href='./index.html'" href="#about" class="unique-nav-link home" style="font-size: 18px;">Home</a></li>
+                <li><a onclick="location.href='./about.html'" href="#about" style="font-size: 18px;" class="unique-nav-link about">About</a></li>
+                <li><a onclick="location.href='./skills.html'" href="#skills" style="font-size: 18px;" class="unique-nav-link skills">Skills</a></li>
+                <li><a style="font-size: 18px;" onclick="location.href='./projects.html'"  href="#projects" class="unique-nav-link projects">Projects</a></li>
+                <li><a style="font-size: 18px;" onclick="location.href='./contact.html'" href="#contact" class="unique-nav-link contact">Contact</a></li>
+            </ul>
+            <div class="unique-name">
+                <a href="#home" style="font-size: 22px;" class="unique-name-link">Sai Kiran</a>
+            </div>
+        </nav>
+    </header>
+    <form>
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter Your message here"></textarea required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+        <div class="footer">
+            <p class="thank-you">Thank you for contacting me. I will get back to you as soon as possible.</p>
+            <p>&copy; Sai Kiran 2024</p>
+            <div class="social-icons">
+                <i onclick="location.href='https://www.twetter.com/'" class="fab fa-twitter"></i>
+                <i onclick="location.href='https://www.instagram.com/bunny1_7_0_8/?next=%2F'" class="fab fa-instagram"></i>
+                <i onclick="location.href='https://github.com/Bunnysai143/FMML_labs_and_projects'" class="fab fa-github"></i>
+                <i onclick="location.href='https://www.linkedin.com/in/sai-kiran-kudupudi-953a12281/'" class="fab fa-linkedin"></i>
+            </div>
+            <a onclick="location.href='./index.html'" href="#">Click Here to return Home</a>
+        </div>
+    </div>
+    <!-- Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
